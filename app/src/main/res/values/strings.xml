@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">One Touch Statistics Banyumas</string>
+    
+    <string-array name="data_judul">
+        <item>Inflasi</item>
+        <item>Kemiskinan</item>
+        <item>Ketenagakerjaan</item>
+        <item>IPM</item>
+        <item>Pertumbuhan</item>
+    </string-array>
+
+    <string-array name="data_value">
+        <item>Sekian %</item>
+        <item>Sekian %</item>
+        <item>Sekian %</item>
+        <item>Sekian %</item>
+        <item>Sekian %</item>
+    </string-array>
+    
+    <string-array name="data_deskripsi">
+        <item>Ini Deskripsi</item>
+        <item>Ini Deskripsi</item>
+        <item>Ini Deskripsi</item>
+        <item>Ini Deskripsi</item>
+        <item>Ini Deskripsi</item>
+    </string-array>
 </resources>
