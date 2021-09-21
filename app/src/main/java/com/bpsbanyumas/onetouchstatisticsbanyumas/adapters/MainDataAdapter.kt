@@ -19,7 +19,7 @@ class MainDataAdapter(private val listMyDatas: ArrayList<MainData>, val context:
         val mainData = listMyDatas[position]
 
         holder.tvJudul.text = mainData.judul
-        holder.tvValue.text = mainData.deskripsi
+        holder.tvValue.text = mainData.value
         holder.tvDeskripsi.text = mainData.deskripsi
 
     }
