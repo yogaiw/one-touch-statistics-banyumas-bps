@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bpsbanyumas.onetouchstatisticsbanyumas.adapters.MainDataAdapter
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.card_item.*
 
 class MainActivity : AppCompatActivity() {
     
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         rv_maindata.setHasFixedSize(true)
         list.addAll(getListMainData())
@@ -23,20 +24,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun getListMainData(): ArrayList<MainData> {
-        val dataJudul = resources.getStringArray(R.array.data_judul)
-        val dataValue = resources.getStringArray(R.array.data_value)
-        val dataDeskripsi = resources.getStringArray(R.array.data_deskripsi)
 
         val listMainData = ArrayList<MainData>()
 
-        for (position in dataJudul.indices) {
-            val myData = MainData(
-                dataJudul[position],
-                dataValue[position],
-                dataDeskripsi[position]
-            )
-            listMainData.add(myData)
-        }
+        listMainData.add(MainData("Inflasi", "Sekian %", "ini Deskripsi", R.drawable.inflasi))
+        listMainData.add(MainData("Kependudukan", "Sekian %", "ini Deskripsi", R.drawable.kependudukan))
+        listMainData.add(MainData("Kemiskinan", "Sekian %", "ini Deskripsi", R.drawable.kemiskinan))
+        listMainData.add(MainData("Ketenagakerjaan", "Sekian %", "ini Deskripsi", R.drawable.ketenagakerjaan))
+        listMainData.add(MainData("IPM", "Sekian %", "ini Deskripsi", R.drawable.ipm))
+        listMainData.add(MainData("Pertumbuhan", "Sekian %", "ini Deskripsi", R.drawable.pertumbuhan))
+
         return listMainData
     }
 

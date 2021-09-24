@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">One Touch Statistics Banyumas</string>
+    <string name="app_name">Statistik Banyumas</string>
     
     <string-array name="data_judul">
         <item>Inflasi</item>

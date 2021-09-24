@@ -4,9 +4,8 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class MainData (
+data class MainData(
     var judul: String,
     var value: String,
     var deskripsi: String,
-//    var icon: String
-):Parcelable
+    var icon: Int ):Parcelable
