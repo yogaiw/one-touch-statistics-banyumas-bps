@@ -3,6 +3,7 @@
     
     <string-array name="data_judul">
         <item>Inflasi</item>
+        <item>Kependudukan</item>
         <item>Kemiskinan</item>
         <item>Ketenagakerjaan</item>
         <item>IPM</item>
@@ -15,9 +16,11 @@
         <item>Sekian %</item>
         <item>Sekian %</item>
         <item>Sekian %</item>
+        <item>Sekian %</item>
     </string-array>
     
     <string-array name="data_deskripsi">
+        <item>Ini Deskripsi</item>
         <item>Ini Deskripsi</item>
         <item>Ini Deskripsi</item>
         <item>Ini Deskripsi</item>
