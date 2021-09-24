@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val dataJudul = resources.getStringArray(R.array.data_judul)
         val dataValue = resources.getStringArray(R.array.data_value)
         val dataDeskripsi = resources.getStringArray(R.array.data_deskripsi)
+        val dataIcon = resources.getStringArray(R.array.data_icon)
 
         val listMainData = ArrayList<MainData>()
 
@@ -33,7 +34,8 @@ class MainActivity : AppCompatActivity() {
             val myData = MainData(
                 dataJudul[position],
                 dataValue[position],
-                dataDeskripsi[position]
+                dataDeskripsi[position],
+                dataIcon[position]
             )
             listMainData.add(myData)
         }

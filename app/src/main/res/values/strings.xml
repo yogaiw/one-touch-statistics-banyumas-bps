@@ -3,6 +3,7 @@
     
     <string-array name="data_judul">
         <item>Inflasi</item>
+        <item>Kependudukan</item>
         <item>Kemiskinan</item>
         <item>Ketenagakerjaan</item>
         <item>IPM</item>
@@ -10,6 +11,7 @@
     </string-array>
 
     <string-array name="data_value">
+        <item>Sekian %</item>
         <item>Sekian %</item>
         <item>Sekian %</item>
         <item>Sekian %</item>
@@ -23,5 +25,15 @@
         <item>Ini Deskripsi</item>
         <item>Ini Deskripsi</item>
         <item>Ini Deskripsi</item>
+        <item>Ini Deskripsi</item>
+    </string-array>
+
+    <string-array name="data_icon">
+        <item>https://yogaiw.github.io/content/icons/inflasi.png</item>
+        <item>https://yogaiw.github.io/content/icons/kependudukan.png</item>
+        <item>https://yogaiw.github.io/content/icons/kemiskinan.png</item>
+        <item>https://yogaiw.github.io/content/icons/ketenagakerjaan.png</item>
+        <item>https://yogaiw.github.io/content/icons/ipm.png</item>
+        <item>https://yogaiw.github.io/content/icons/pertumbuhan.png</item>
     </string-array>
 </resources>

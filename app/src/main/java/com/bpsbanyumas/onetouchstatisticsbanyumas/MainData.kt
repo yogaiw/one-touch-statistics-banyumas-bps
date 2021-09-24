@@ -8,5 +8,5 @@ data class MainData (
     var judul: String,
     var value: String,
     var deskripsi: String,
-//    var icon: String
+    var icon: String
 ):Parcelable
