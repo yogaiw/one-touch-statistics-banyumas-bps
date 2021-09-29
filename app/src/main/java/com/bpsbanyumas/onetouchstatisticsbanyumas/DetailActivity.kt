@@ -2,6 +2,7 @@ package com.bpsbanyumas.onetouchstatisticsbanyumas
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
 import com.bpsbanyumas.onetouchstatisticsbanyumas.adapters.MainDataAdapter
 import kotlinx.android.synthetic.main.activity_detail.*
 
@@ -10,6 +11,8 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         val posisi = intent.getStringExtra("POSISI")
 
