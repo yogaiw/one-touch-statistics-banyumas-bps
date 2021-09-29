@@ -11,21 +11,21 @@
     </string-array>
 
     <string-array name="data_value">
-        <item>Sekian %</item>
-        <item>Sekian %</item>
-        <item>Sekian %</item>
-        <item>Sekian %</item>
-        <item>Sekian %</item>
-        <item>Sekian %</item>
+        <item>1,90 %</item>
+        <item>1 776 918 Jiwa</item>
+        <item>13,26 %</item>
+        <item>66,66 %</item>
+        <item>71,98 %</item>
+        <item>1,65 %</item>
     </string-array>
 
     <string-array name="data_deskripsi">
-        <item>Ini Deskripsi</item>
-        <item>Ini Deskripsi</item>
-        <item>Ini Deskripsi</item>
-        <item>Ini Deskripsi</item>
-        <item>Ini Deskripsi</item>
-        <item>Ini Deskripsi</item>
+        <item>di Banyumas pada Tahun 2020</item>
+        <item>Tahun 2020</item>
+        <item>Angka Kemiskinan di Banyumas Tahun 2020</item>
+        <item>Tingkat Partisipasi Angkatan Kerja di Banyumas Tahun 2020</item>
+        <item>Tahun 2020</item>
+        <item>Laju Pertumbuhan Ekonomi di Banyumas Tahun 2020</item>
     </string-array>
 
     <string-array name="data_icon">
@@ -36,4 +36,10 @@
         <item>https://yogaiw.github.io/content/icons/ipm.png</item>
         <item>https://yogaiw.github.io/content/icons/pertumbuhan.png</item>
     </string-array>
+
+    <string name="detail_inflasi">
+        Inflasi dapat diartikan sebagai kenaikan harga barang dan jasa secara umum dan terus menerus dalam jangka waktu tertentu. Deflasi merupakan kebalikan dari inflasi, yakni penurunan harga barang secara umum dan terus menerus.
+
+        Perhitungan inflasi dilakukan oleh Badan Pusat Statistik (BPS), link ke metadata SEKI-IHK. Kenaikan harga dari satu atau dua barang saja tidak dapat disebut inflasi kecuali bila kenaikan itu meluas (atau mengakibatkan kenaikan harga) pada barang lainnya.
+    </string>
 </resources>

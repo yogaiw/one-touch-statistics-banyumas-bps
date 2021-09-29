@@ -16,6 +16,10 @@ class DetailActivity : AppCompatActivity() {
         when(posisi) {
             "0" -> setContentView(R.layout.activity_detail)
             "1" -> setContentView(R.layout.detail_kependudukan)
+            "2" -> setContentView(R.layout.detail_kemiskinan)
+            "3" -> setContentView(R.layout.detail_ketenagakerjaan)
+            "4" -> setContentView(R.layout.detail_ipm)
+            "5" -> setContentView(R.layout.detail_pertumbuhan)
         }
     }
 }

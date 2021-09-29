@@ -24,13 +24,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KEPENDUDUKAN"
+                android:text="KETENAGAKERJAAN"
                 android:textStyle="bold"
                 android:textSize="30dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jumlah Penduduk Banyumas (2020) sebesar 1 776 918"
+                android:text="ini diganti"
                 android:textStyle="italic"
                 android:textSize="15dp"/>
             <View

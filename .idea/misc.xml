@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/activity_detail.xml" value="0.12864583333333332" />
+        <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/activity_detail.xml" value="0.4" />
         <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/card_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/detail_ipm.xml" value="0.25416666666666665" />
+        <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/detail_kemiskinan.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/detail_kependudukan.xml" value="0.12864583333333332" />
+        <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/detail_ketenagakerjaan.xml" value="0.25416666666666665" />
+        <entry key="..\:/KULIAH/OTS_B{S/ots_apk/app/src/main/res/layout/detail_pertumbuhan.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
