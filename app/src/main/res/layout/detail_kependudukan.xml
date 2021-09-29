@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jumlah Penduduk Banyumas (2020) sebesar 1 776 918"
+                android:text="ini diganti"
                 android:textStyle="italic"
                 android:textSize="15dp"/>
             <View
@@ -59,15 +59,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_detail">
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
             <TableRow>
                 <TextView
+                    android:textStyle="bold"
                     android:text="Januari"
-                    android:padding="10dp"/>
+                    android:padding="3dip"/>
 
                 <TextView
                     android:text="0,32 %"
-                    android:gravity="right"/>
+                    android:gravity="right"
+                    android:padding="3dip"/>
             </TableRow>
         </TableLayout>
     </LinearLayout>
