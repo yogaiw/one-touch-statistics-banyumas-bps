@@ -27,10 +27,11 @@ class MainDataAdapter(private val listMyData: ArrayList<MainData>, val context: 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         holder.bind(listMyData[position])
 
-        val myData = listMyData[position]
-
         holder.cv.setOnClickListener {
-            context.startActivity(Intent(context, DetailActivity::class.java))
+            val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra("POSISI", position.toString())
+            context.startActivity(intent)
+
             Log.d(TAG, position.toString())
         }
     }
