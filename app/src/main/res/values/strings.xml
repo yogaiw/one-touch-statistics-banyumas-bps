@@ -20,12 +20,12 @@
     </string-array>
 
     <string-array name="data_deskripsi">
-        <item>di Banyumas pada Tahun 2020</item>
         <item>Tahun 2020</item>
-        <item>Banyumas Tahun 2020</item>
-        <item>Banyumas Tahun 2020</item>
         <item>Tahun 2020</item>
-        <item>Pertumbuhan Ekonomi Banyumas (2020)</item>
+        <item>Angka Kemiskinan (2020)</item>
+        <item>Angkatan Kerja (2020)</item>
+        <item>Tahun 2020</item>
+        <item>Pertumbuhan Ekonomi (2020)</item>
     </string-array>
 
     <string-array name="data_icon">

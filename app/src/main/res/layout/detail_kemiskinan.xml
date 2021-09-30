@@ -107,9 +107,10 @@
                     android:padding="3dip"/>
 
                 <TextView
-                    android:text="406 250 Rp/Kapita/Bulan"
+                    android:text="Rp 406 250 Kapita/Bulan"
                     android:gravity="right"
-                    android:padding="3dip"/>
+                    android:padding="3dip"
+                    android:textStyle="bold"/>
             </TableRow>
         </TableLayout>
     </LinearLayout>
