@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">One Touch Statistics Banyumas</string>
+    <string name="app_name">Statistik Banyumas</string>
 
     <string-array name="data_judul">
         <item>Inflasi</item>
@@ -22,10 +22,10 @@
     <string-array name="data_deskripsi">
         <item>di Banyumas pada Tahun 2020</item>
         <item>Tahun 2020</item>
-        <item>Angka Kemiskinan di Banyumas Tahun 2020</item>
-        <item>Tingkat Partisipasi Angkatan Kerja di Banyumas Tahun 2020</item>
+        <item>Banyumas Tahun 2020</item>
+        <item>Banyumas Tahun 2020</item>
         <item>Tahun 2020</item>
-        <item>Laju Pertumbuhan Ekonomi di Banyumas Tahun 2020</item>
+        <item>Pertumbuhan Ekonomi Banyumas (2020)</item>
     </string-array>
 
     <string-array name="data_icon">
@@ -42,4 +42,13 @@
 
         Perhitungan inflasi dilakukan oleh Badan Pusat Statistik (BPS), link ke metadata SEKI-IHK. Kenaikan harga dari satu atau dua barang saja tidak dapat disebut inflasi kecuali bila kenaikan itu meluas (atau mengakibatkan kenaikan harga) pada barang lainnya.
     </string>
+    <string name="summary_inflasi">Wilayah Banyumas Tahun 2020 sebesar 1,90%</string>
+    <string name="summary_kependudukan">Jumlah Penduduk Kab. Banyumas 1 776 918</string>
+    <string name="detail_kependudukan">Masukkan detail pada Strings</string>
+    <string name="summary_kemiskinan">ini diganti</string>
+    <string name="detail_kemiskinan">Masukkan detail pada Strings</string>
+    <string name="summary_ketenagakerjaan">ini diganti</string>
+    <string name="detail_ketenagakerjaan">Masukkan detail pada Strings</string>
+    <string name="summary_pertumbuhan">ini diganti</string>
+    <string name="detail_pertumbuhan">Masukkan detail pada Strings</string>
 </resources>

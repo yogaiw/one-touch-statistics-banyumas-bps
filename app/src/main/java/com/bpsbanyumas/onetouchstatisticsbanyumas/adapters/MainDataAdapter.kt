@@ -43,7 +43,7 @@ class MainDataAdapter(private val listMyData: ArrayList<MainData>, val context: 
 
         fun bind(myData: MainData) {
             with(itemView){
-                Glide.with(itemView.context).load(myData.icon).apply(RequestOptions().override(500, 500)).into(iv_icon)
+                Glide.with(itemView.context).load(myData.icon).apply(RequestOptions().override(300, 250)).into(iv_icon)
                 tv_judul.text = myData.judul
                 tv_value.text = myData.value
                 tv_deskripsi.text = myData.deskripsi
