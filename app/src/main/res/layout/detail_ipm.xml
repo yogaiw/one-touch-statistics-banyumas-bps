@@ -16,6 +16,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/ll_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/header_bg"
+            app:layout_constraintTop_toTopOf="parent"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,13 +29,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="IPM"
                 android:textStyle="bold"
                 android:textSize="30dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ini diganti"
+                android:textColor="@color/white"
+                android:text="@string/summary_ipm"
                 android:textStyle="italic"
                 android:textSize="15dp"/>
             <View
@@ -40,7 +47,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Masukkan detail pada Strings"
+                android:textColor="@color/white"
+                android:text="@string/detail_ipm"
                 android:justificationMode="inter_word"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
