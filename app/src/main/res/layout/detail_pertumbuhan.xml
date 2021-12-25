@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity"
-    android:padding="10dp">
+    tools:context=".DetailActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_definisi"
@@ -25,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="30dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
