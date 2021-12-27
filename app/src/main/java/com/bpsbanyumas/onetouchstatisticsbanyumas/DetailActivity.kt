@@ -19,30 +19,36 @@ class DetailActivity : AppCompatActivity() {
         val posisi = intent.getStringExtra("POSISI")
 
         when(posisi) {
-            "0" -> setContentView(R.layout.activity_detail)
+            "0" -> {
+                setContentView(R.layout.activity_detail)
+                showDataInflasi()
+            }
             "1" -> setContentView(R.layout.detail_kependudukan)
             "2" -> setContentView(R.layout.detail_kemiskinan)
             "3" -> setContentView(R.layout.detail_ketenagakerjaan)
             "4" -> setContentView(R.layout.detail_ipm)
             "5" -> setContentView(R.layout.detail_pertumbuhan)
         }
-        showDataInflasi()
     }
 
     fun showDataInflasi() {
+        val data_bulan = arrayOf("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus","September", "Oktober", "November", "Desember")
+        val data_value = arrayOf("1","2","3","4","5","6","7","8","9","10","11","12")
+
         val rows: ArrayList<DataTableRow> = ArrayList()
 
         val header = DataTableHeader.Builder()
-            .item("Bulan", 1)
-            .item("Angka Inflasi (% persen)", 1)
+            .item("Bulan",12)
+            .item("Angka Inflasi (%)",12)
             .build()
 
-        val row = DataTableRow.Builder()
-            .value("Januari")
-            .value("0.23")
-            .build()
-
-        rows.add(row)
+        for(i in 0..11) {
+            val row = DataTableRow.Builder()
+                .value(data_bulan[i])
+                .value(data_value[i])
+                .build()
+            rows.add(row)
+        }
 
         data_inflasi.typeface
         data_inflasi.header = header
