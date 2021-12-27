@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
 import com.bpsbanyumas.onetouchstatisticsbanyumas.adapters.MainDataAdapter
+import ir.androidexception.datatable.model.DataTableHeader
+import ir.androidexception.datatable.model.DataTableRow
 import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
@@ -24,5 +26,27 @@ class DetailActivity : AppCompatActivity() {
             "4" -> setContentView(R.layout.detail_ipm)
             "5" -> setContentView(R.layout.detail_pertumbuhan)
         }
+        showDataInflasi()
+    }
+
+    fun showDataInflasi() {
+        val rows: ArrayList<DataTableRow> = ArrayList()
+
+        val header = DataTableHeader.Builder()
+            .item("Bulan", 1)
+            .item("Angka Inflasi (% persen)", 1)
+            .build()
+
+        val row = DataTableRow.Builder()
+            .value("Januari")
+            .value("0.23")
+            .build()
+
+        rows.add(row)
+
+        data_inflasi.typeface
+        data_inflasi.header = header
+        data_inflasi.rows = rows
+        data_inflasi.inflate(this)
     }
 }
