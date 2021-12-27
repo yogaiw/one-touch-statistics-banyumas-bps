@@ -33,7 +33,7 @@ class DetailActivity : AppCompatActivity() {
 
     fun showDataInflasi() {
         val data_bulan = arrayOf("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus","September", "Oktober", "November", "Desember")
-        val data_value = arrayOf("1","2","3","4","5","6","7","8","9","10","11","12")
+        val data_value = arrayOf("0.35","0.15","0.06","0.04","0.19","-0.20","0.09","0.12","-0.13","0.35","0.40","Belum Tersedia")
 
         val rows: ArrayList<DataTableRow> = ArrayList()
 
@@ -50,7 +50,6 @@ class DetailActivity : AppCompatActivity() {
             rows.add(row)
         }
 
-        data_inflasi.typeface
         data_inflasi.header = header
         data_inflasi.rows = rows
         data_inflasi.inflate(this)
