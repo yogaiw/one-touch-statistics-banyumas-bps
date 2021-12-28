@@ -134,7 +134,7 @@ class DetailActivity : AppCompatActivity() {
     private fun showDataKetenagakerjaan() {
         val bulan = arrayOf("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember")
         val thn2019 = arrayOf("1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000")
-        val thn2020 = arrayOf("1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000")
+        val thn2020 = arrayOf("1.900.000","1.900.000","1.900.000","1.900.000","1.900.000","1.900.000","1.900.000","1.900.000","1.900.000","1.900.000","1.900.000","1.900.000")
 
         val rows: ArrayList<DataTableRow> = ArrayList()
 
