@@ -7,7 +7,7 @@
         <item>Kemiskinan</item>
         <item>Ketenagakerjaan</item>
         <item>IPM</item>
-        <item>Pertumbuhan</item>
+        <item>PDRB</item>
     </string-array>
 
     <string-array name="data_value">
@@ -25,7 +25,7 @@
         <item>Angka Kemiskinan (2020)</item>
         <item>Angkatan Kerja (2020)</item>
         <item>Tahun 2020</item>
-        <item>Pertumbuhan Ekonomi (2020)</item>
+        <item>Produk Domestik Regional Bruto</item>
     </string-array>
 
     <string-array name="data_icon">
@@ -39,8 +39,6 @@
 
     <string name="detail_inflasi">
         Inflasi dapat diartikan sebagai kenaikan harga barang dan jasa secara umum dan terus menerus dalam jangka waktu tertentu. Deflasi merupakan kebalikan dari inflasi, yakni penurunan harga barang secara umum dan terus menerus.
-        \n\n
-        Perhitungan inflasi dilakukan oleh Badan Pusat Statistik (BPS), link ke metadata SEKI-IHK. Kenaikan harga dari satu atau dua barang saja tidak dapat disebut inflasi kecuali bila kenaikan itu meluas (atau mengakibatkan kenaikan harga) pada barang lainnya.
     </string>
     <string name="summary_inflasi">Wilayah Banyumas Tahun 2020 sebesar 1,90%</string>
     <string name="summary_kependudukan">Jumlah Penduduk Kab. Banyumas 1 776 918</string>

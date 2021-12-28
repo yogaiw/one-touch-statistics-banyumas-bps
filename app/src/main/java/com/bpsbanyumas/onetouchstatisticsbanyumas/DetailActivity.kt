@@ -9,8 +9,11 @@ import ir.androidexception.datatable.DataTable
 import ir.androidexception.datatable.model.DataTableHeader
 import ir.androidexception.datatable.model.DataTableRow
 import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.detail_ipm.*
 import kotlinx.android.synthetic.main.detail_kemiskinan.*
 import kotlinx.android.synthetic.main.detail_kependudukan.*
+import kotlinx.android.synthetic.main.detail_ketenagakerjaan.*
+import kotlinx.android.synthetic.main.detail_pertumbuhan.*
 
 class DetailActivity : AppCompatActivity() {
 
@@ -35,9 +38,18 @@ class DetailActivity : AppCompatActivity() {
                 setContentView(R.layout.detail_kemiskinan)
                 showDataKemiskinan()
             }
-            "3" -> setContentView(R.layout.detail_ketenagakerjaan)
-            "4" -> setContentView(R.layout.detail_ipm)
-            "5" -> setContentView(R.layout.detail_pertumbuhan)
+            "3" -> {
+                setContentView(R.layout.detail_ketenagakerjaan)
+                showDataKetenagakerjaan()
+            }
+            "4" -> {
+                setContentView(R.layout.detail_ipm)
+                showDataIPM()
+            }
+            "5" -> {
+                setContentView(R.layout.detail_pertumbuhan)
+                showDataPDRB()
+            }
         }
     }
 
@@ -63,6 +75,87 @@ class DetailActivity : AppCompatActivity() {
         data_inflasi.header = header
         data_inflasi.rows = rows
         data_inflasi.inflate(this)
+    }
+
+    private fun showDataPDRB() {
+        val sektor = arrayOf("PDRB","Pertanian, Kehuatan, Perikanan","Pertambangan","Pengadaan Listrik dan Gas")
+        val thn2019 = arrayOf("53.948.860","6.470.099","2.983.607","49.744")
+        val thn2020 = arrayOf("53.682.118","6.681.389","2.990.219","50.696")
+
+        val rows: ArrayList<DataTableRow> = ArrayList()
+
+        val header = DataTableHeader.Builder()
+            .item("Sektor PDRB",2)
+            .item("2019",1)
+            .item("2020",1)
+            .build()
+
+        for(i in 0..3) {
+            val row = DataTableRow.Builder()
+                .value(sektor[i])
+                .value(thn2019[i])
+                .value(thn2020[i])
+                .build()
+            rows.add(row)
+        }
+
+        data_pertumbuhan.header = header
+        data_pertumbuhan.rows = rows
+        data_pertumbuhan.inflate(this)
+    }
+
+    private fun showDataIPM() {
+        val komponen = arrayOf("Angka Harapan Hidup (tahun)","Harapan Lama Sekolah (tahun)","Rata-Rata Lama Sekolah (tahun)","Pengeluaran Per Kapita","IPM")
+        val thn2019 = arrayOf("73,55","12,82","7,42","Rp11.703","71,96")
+        val thn2020 = arrayOf("73,72","12,85","7,52","Rp11.448","71,98")
+
+        val rows: ArrayList<DataTableRow> = ArrayList()
+
+        val header = DataTableHeader.Builder()
+            .item("Komponen",2)
+            .item("2019",1)
+            .item("2020",1)
+            .build()
+
+        for(i in 0..4) {
+            val row = DataTableRow.Builder()
+                .value(komponen[i])
+                .value(thn2019[i])
+                .value(thn2020[i])
+                .build()
+            rows.add(row)
+        }
+
+        data_ipm.header = header
+        data_ipm.rows = rows
+        data_ipm.inflate(this)
+    }
+
+    private fun showDataKetenagakerjaan() {
+        val bulan = arrayOf("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember")
+        val thn2019 = arrayOf("1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000","1.750.000")
+        val thn2020 = arrayOf("1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000","1900000")
+
+        val rows: ArrayList<DataTableRow> = ArrayList()
+
+        val header = DataTableHeader.Builder()
+            .item("Bulan",1)
+            .item("2019",1)
+            .item("2020",1)
+            .build()
+
+        for(i in 0..11) {
+            val row = DataTableRow.Builder()
+                .value(bulan[i])
+                .value(thn2019[i])
+                .value(thn2020[i])
+                .build()
+            rows.add(row)
+        }
+
+        data_ketenagakerjaan.header = header
+        data_ketenagakerjaan.rows = rows
+        data_ketenagakerjaan.inflate(this)
     }
 
     private fun showDataKemiskinan() {
