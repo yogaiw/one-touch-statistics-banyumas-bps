@@ -4,9 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
 import com.bpsbanyumas.onetouchstatisticsbanyumas.adapters.MainDataAdapter
+import com.bpsbanyumas.onetouchstatisticsbanyumas.databinding.DetailKemiskinanBinding
+import ir.androidexception.datatable.DataTable
 import ir.androidexception.datatable.model.DataTableHeader
 import ir.androidexception.datatable.model.DataTableRow
 import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.detail_kemiskinan.*
+import kotlinx.android.synthetic.main.detail_kependudukan.*
 
 class DetailActivity : AppCompatActivity() {
 
@@ -23,17 +27,23 @@ class DetailActivity : AppCompatActivity() {
                 setContentView(R.layout.activity_detail)
                 showDataInflasi()
             }
-            "1" -> setContentView(R.layout.detail_kependudukan)
-            "2" -> setContentView(R.layout.detail_kemiskinan)
+            "1" -> {
+                setContentView(R.layout.detail_kependudukan)
+                showDataKependudukan()
+            }
+            "2" -> {
+                setContentView(R.layout.detail_kemiskinan)
+                showDataKemiskinan()
+            }
             "3" -> setContentView(R.layout.detail_ketenagakerjaan)
             "4" -> setContentView(R.layout.detail_ipm)
             "5" -> setContentView(R.layout.detail_pertumbuhan)
         }
     }
 
-    fun showDataInflasi() {
+    private fun showDataInflasi() {
         val data_bulan = arrayOf("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus","September", "Oktober", "November", "Desember")
-        val data_value = arrayOf("0.35","0.15","0.06","0.04","0.19","-0.20","0.09","0.12","-0.13","0.35","0.40","Belum Tersedia")
+        val data_value = arrayOf("0,35","0,15","0,06","0,04","0,19","-0,20","0,09","0,12","-0,13","0,35","0,40","Belum Tersedia")
 
         val rows: ArrayList<DataTableRow> = ArrayList()
 
@@ -53,5 +63,67 @@ class DetailActivity : AppCompatActivity() {
         data_inflasi.header = header
         data_inflasi.rows = rows
         data_inflasi.inflate(this)
+    }
+
+    private fun showDataKemiskinan() {
+        val variabel = arrayOf("Jumlah Penduduk Miskin (ribu jiwa)","Persentase Penduduk Miskin","Garis Kemiskinan")
+        val thn2019 = arrayOf("13,50","12,53 %","Rp385.140 /Kapita/Bulan")
+        val thn2020 = arrayOf("225,84","13,26 %","Rp406.250 /Kapita/bulan")
+
+        val rows:ArrayList<DataTableRow> = ArrayList()
+
+        val header = DataTableHeader.Builder()
+            .item("Kemiskinan", 2)
+            .item("2019",1)
+            .item("2020",1)
+            .build()
+
+        for(i in 0..2) {
+            val row = DataTableRow.Builder()
+                .value(variabel[i])
+                .value(thn2019[i])
+                .value(thn2020[i])
+                .build()
+            rows.add(row)
+        }
+
+        data_kemiskinan.header = header
+        data_kemiskinan.rows = rows
+        data_kemiskinan.inflate(this)
+    }
+
+    private fun showDataKependudukan() {
+        val kecamatan = arrayOf(
+            "Lumbir","Wangon","Jatilawang","Rawalo","Kebasen","Kemrajnen","Sumpiuh","Tambak","Somagede","Kalibagor",
+            "Banyumas","Patikraja","Purwojati","Ajibarang","Gumelar","Pekuncen","Cilongok","Karanglewas","Kedungbanteng","Baturraden",
+            "Sumbang","Kembaran","Sokaraja","Purwokerto Selatan","Purwokerto Barat","Purwokerto Timur","Purwokerto Utara")
+        val penduduk = arrayOf(
+            "49.870","83.695","66.431","52.847","67.140","72.383","57.717","50.158","37.540","56.800",
+            "52.878","60.637","36.981","102.326","53.349","75.576","124.684","67.269","61.771","53.514",
+            "93.160","81.737","89.184","72.304","52.802","54.585","49.580")
+        val growth = arrayOf(
+            "1,37","1,33","1,48","1,51","1,82","1,45","1,44","1,75","1,61","2,07",
+            "1,44","1,81","1,78","1,26","1,63","1,56","1,32","1,58","1,85","1,23",
+            "2,17","1,21","1,44","0,24","0,71","-0,44","-1,38")
+
+        val rows: ArrayList<DataTableRow> = ArrayList()
+        val header = DataTableHeader.Builder()
+            .item("Kecamatan", 2)
+            .item("Penduduk", 2)
+            .item("Laju Pertumbuhan", 1)
+            .build()
+
+        for(i in 0..26) {
+            val row = DataTableRow.Builder()
+                .value(kecamatan[i])
+                .value(penduduk[i])
+                .value(growth[i])
+                .build()
+            rows.add(row)
+        }
+
+        data_kependudukan.header = header
+        data_kependudukan.rows = rows
+        data_kependudukan.inflate(this)
     }
 }
